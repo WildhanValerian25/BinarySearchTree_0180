@@ -36,3 +36,8 @@ public:
         //step 3: make the left and right child of the new node point to null 
         newnode->leftchild = nullptr;
         newnode->rightchild = nullptr;
+
+        //step 4: locate the new node which will be the parent of the node to bw inserted
+        node *parent = nullptr;
+        node *currentnode = nullptr;
+        search(x, parent, currentnode);
