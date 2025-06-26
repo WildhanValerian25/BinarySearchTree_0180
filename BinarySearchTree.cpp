@@ -22,4 +22,9 @@ public:
     BinaryTree(){
         ROOT = nullptr; //initializing ROOT to null
     }
-    
+    void insert(){
+        int x;
+        cout << "Masukkan nilai ";
+        cin >> x;
+        
+       
