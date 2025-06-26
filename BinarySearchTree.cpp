@@ -103,4 +103,20 @@ void search(int element, node *&parent, node *&currentnode)
         
     }    
 
-    
+        void preorder(node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr == nullptr)
+            return;
+
+        cout << ptr->info << " ";
+        preorder(ptr->leftchild);
+        preorder(ptr->rightchild);
+        
+    }    
+
+      
