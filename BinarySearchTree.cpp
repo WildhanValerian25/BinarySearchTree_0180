@@ -32,3 +32,7 @@ public:
 
         //step 2 : assing the value to the data field of new node 
         newnode->info = x;
+
+        //step 3: make the left and right child of the new node point to null 
+        newnode->leftchild = nullptr;
+        newnode->rightchild = nullptr;
