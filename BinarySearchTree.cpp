@@ -119,4 +119,19 @@ void search(int element, node *&parent, node *&currentnode)
         
     }    
 
-      
+        void postorder(node *ptr)
+    {
+        if (isEmpty())
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr == nullptr)
+            return;
+
+        postorder(ptr->leftchild);
+        postorder(ptr->rightchild);
+        cout << ptr->info << " ";
+    }    
+
+   
